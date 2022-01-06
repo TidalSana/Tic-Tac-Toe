@@ -1,21 +1,128 @@
-main {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    background-color: #edeef6;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+#header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.title {
+    margin-top: 20px;
+}
+#TTT {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+#section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    min-width: 100vw;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.play-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.play-modal.close {
+    opacity: 0;
+    pointer-events: none;
+}
+.play {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    height: 100px;
     text-align: center;
-    width: 100%;
-    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#play-header {
+    margin: 30px;
+}
+.mark-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    bottom: 50px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.mark {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mark-modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+#mark-header {
+    margin: 30px;
+}
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 400px;
+}
+.replay-container {
+    margin: 30px;
 }
 .cell {
     width: 100px;
     height: 100px;
     background: gray;
     display: inline-block;
-    margin: 1px;
-  }
+    margin: 2px;
+    vertical-align: top;
+    text-align: center;   
+    line-height: 90px;
+    font-size: 100px;
+    transition: all .2s ease-in-out;
+}
+.cell:hover {
+    transform: scale(1.1);
+}
+.buttons {
+    margin: 30px;
+}

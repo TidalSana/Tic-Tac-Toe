@@ -9,8 +9,45 @@
     <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
+    <header id="header">
+        <div class="title"><h1 id="TTT">❌ ⭕ 🦶</h1></div>        
+    </header>
+    <section id="section">
+        <div class="player-X">Player 1: <p id="score-X"></p></div>
+        <div class="player-O">Player 2: <p id="score-O"></p></div>
+    </section>
     <main>
-        <div id="table"></div>
+        <div class="play-modal">
+            <div class="play">
+                <h1 id="play-header">Click 'Play' to Start Game</h1>
+                <button id="start" type="button">Play</button>
+            </div>
+        </div>
+        <div class="mark-modal">
+            <div class="mark">
+                <h1 id="mark-header">Choose a Mark</h1>
+                <button id="X" class="marks" type="button">X</button>
+                <button id="O" class="marks" type="button">O</button>
+            </div>
+        </div>
+        <div class="table-container">
+            <div id="table">
+                <div class="cell" id="0"></div> 
+                <div class="cell" id="1"></div> 
+                <div class="cell" id="2"></div> 
+                <br>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <br>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+            <div class="replay-container">
+                <button id="reset" type="button">Reset</button>
+            </div>
+        </div>
     </main>
 </body>
 </html>
